@@ -1,6 +1,6 @@
-# Data Science & Analytics Portfolio
+# projects
 
-Selected projects covering machine learning, statistical modelling, NLP, time series, big data and applied AI.
+Portfolio of data, analytics and machine learning projects covering statistical modelling, NLP, time series, big data and applied AI.
 
 ## Projects
 
