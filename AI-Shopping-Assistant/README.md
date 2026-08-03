@@ -1,4 +1,4 @@
-# Léo — AI Shopping Assistant
+# Léo: AI Shopping Assistant
 
 A focused FastAPI prototype for the Atelier Home AI shopping assistant portfolio case study. Léo helps a shopper find, understand and compare fictional home and furniture products.
 
