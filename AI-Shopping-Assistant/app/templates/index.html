@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Léo, an AI shopping assistant prototype for home and furniture discovery.">
+  <title>{{ app_name }}</title>
+  <link rel="icon" href="{{ url_for('static', path='/favicon.svg') }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ url_for('static', path='/css/styles.css') }}">
+</head>
+<body data-initial-mode="{{ initial_mode }}">
+  <header class="site-header">
+    <a class="wordmark" href="/" aria-label="Prototype home">ATELIER HOME <small>CONCEPT</small></a>
+    <nav class="header-actions" aria-label="Application controls">
+      <label class="language-control">
+        <span class="visually-hidden">Language</span>
+        <select id="language-select" aria-label="Language">
+          <option value="en">EN</option>
+          <option value="fr">FR</option>
+          <option value="pt">PT</option>
+        </select>
+      </label>
+      <span id="mode-badge" class="mode-badge">{{ initial_mode|upper }} MODE</span>
+      <a class="api-link" href="/docs" target="_blank" rel="noreferrer">API</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="kicker" data-i18n="kicker">YOUR PERSONAL SHOPPING EDIT</p>
+        <h1 data-i18n="heroTitle">A clearer way to find the right piece.</h1>
+        <p class="hero-intro" data-i18n="heroIntro">Meet Léo, a shopping assistant that turns your needs into relevant, explainable choices.</p>
+        <div class="hero-proof" aria-label="Prototype capabilities">
+          <span data-i18n="proof1">Natural language</span>
+          <span data-i18n="proof2">Clear comparisons</span>
+          <span data-i18n="proof3">Grounded answers</span>
+        </div>
+      </div>
+      <div class="hero-scene" aria-hidden="true">
+        <div class="hero-arch"></div>
+        <div class="hero-chair"></div>
+        <div class="hero-table"></div>
+        <span class="hero-spark">✦</span>
+      </div>
+    </section>
+
+    <section class="assistant-layout" aria-labelledby="assistant-title">
+      <aside class="prompt-panel">
+        <p class="kicker" data-i18n="tryAsking">TRY ASKING</p>
+        <h2 data-i18n="promptHeading">Start with a need, not a product name.</h2>
+        <button class="starter" data-prompt-en="I need a compact sofa under €1,000" data-prompt-fr="Je cherche un canapé compact à moins de 1 000 €" data-prompt-pt="Procuro um sofá compacto abaixo de 1 000 €">
+          <span>01</span><span data-i18n="starter1">A sofa for a small room</span>
+        </button>
+        <button class="starter" data-prompt-en="Show me sustainable dining furniture" data-prompt-fr="Montrez-moi du mobilier de salle à manger durable" data-prompt-pt="Mostre-me mobiliário de jantar sustentável">
+          <span>02</span><span data-i18n="starter2">Sustainable dining furniture</span>
+        </button>
+        <button class="starter" data-prompt-en="Compare the Nordic desk and the Forge desk" data-prompt-fr="Comparez le bureau Nordic et le bureau Forge" data-prompt-pt="Compare a secretária Nordic e a secretária Forge">
+          <span>03</span><span data-i18n="starter3">Compare two desks</span>
+        </button>
+        <div class="principle">
+          <b>✓</b>
+          <p><strong data-i18n="principleTitle">Evidence before claims</strong><br><span data-i18n="principleBody">Recommendations cite catalogue attributes rather than invented facts.</span></p>
+        </div>
+      </aside>
+
+      <section class="chat-card">
+        <header class="chat-header">
+          <div class="avatar" aria-hidden="true">L</div>
+          <div>
+            <h2 id="assistant-title">Léo</h2>
+            <p><i></i><span data-i18n="ready">Ready to help</span></p>
+          </div>
+          <button id="new-chat" class="quiet-button" type="button" data-i18n="newChat">New chat</button>
+        </header>
+
+        <div id="messages" class="messages" aria-live="polite" aria-label="Conversation"></div>
+
+        <div id="compare-tray" class="compare-tray" hidden>
+          <span><b id="selected-count">0</b> <span data-i18n="selected">selected</span></span>
+          <button id="compare-selected" type="button" data-i18n="compare">Compare</button>
+        </div>
+
+        <form id="chat-form" class="composer">
+          <label class="visually-hidden" for="chat-input">Message Léo</label>
+          <textarea id="chat-input" rows="1" maxlength="1000" data-i18n-placeholder="placeholder" placeholder="What are you looking for?"></textarea>
+          <button id="send-button" type="submit" aria-label="Send message">↑</button>
+        </form>
+        <p class="prototype-note" data-i18n="prototypeNote">Prototype using fictional products and illustrative images. Availability is not live.</p>
+      </section>
+    </section>
+
+    <section class="how-it-works">
+      <p class="kicker" data-i18n="howKicker">WHY THIS APPROACH</p>
+      <div class="steps">
+        <article><span>01</span><h3 data-i18n="step1Title">Understand</h3><p data-i18n="step1Body">Léo identifies intent and constraints from the conversation.</p></article>
+        <article><span>02</span><h3 data-i18n="step2Title">Retrieve</h3><p data-i18n="step2Body">Python filters and ranks only known catalogue products.</p></article>
+        <article><span>03</span><h3 data-i18n="step3Title">Explain</h3><p data-i18n="step3Body">Every result is supported by visible product attributes.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="product-dialog" class="product-dialog">
+    <button id="close-dialog" class="dialog-close" aria-label="Close">×</button>
+    <div id="dialog-content"></div>
+  </dialog>
+
+  <script>
+    window.APP_CONFIG = { initialMode: "{{ initial_mode }}" };
+  </script>
+  <script src="{{ url_for('static', path='/js/app.js') }}"></script>
+</body>
+</html>
