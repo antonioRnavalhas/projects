@@ -1,2 +1,2 @@
-# projetos
-Portefólio de projetos de dados, analytics e machine learning.
+# projects
+Portfolio of data, analytics and machine learning projects.
