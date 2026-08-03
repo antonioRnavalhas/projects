@@ -1,0 +1,31 @@
+
+# Core / Dados
+!pip install pandas numpy
+
+# NLP - spaCy
+!pip install spacy
+!python -m spacy download en_core_web_sm
+
+# NLP - NLTK
+!pip install nltk
+
+# NLP - Stanza
+!pip install stanza
+
+# Machine Learning
+!pip install scikit-learn
+
+# Sentiment Analysis
+!pip install textblob
+!pip install vaderSentiment
+
+# Deep Learning / Transformers
+!pip install torch
+!pip install transformers
+!pip install accelerate
+
+# Visualização
+!pip install matplotlib
+
+# Requests (para API externa)
+!pip install requests

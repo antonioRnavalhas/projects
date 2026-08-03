@@ -1,0 +1,11 @@
+Objetivo: Preço dos Quartos AirBnb
+
+Problemas Iniciais/Variáveis Desnecessárias:
+	1) calculated_host_listings_count = Nº total de casas do anfitrião -> Delete ? NO -> With License = 1; Without = 0 
+	2) license -> NOT TO DELETE
+	3) neighbourhood_group -> Delete 
+	4) Latitude e Longitude -> Delete? YES
+	5) coluna id: separar os valores entre aspas e preencher as restantes colunas
+
+
+
