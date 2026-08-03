@@ -8,11 +8,11 @@ Rank sessions by their probability of conversion so that marketing and on-site i
 
 ## Contents
 
-- `conversion_propensity_analysis.ipynb` — complete exploratory analysis, feature engineering, modelling and evaluation.
-- `presentation.html` — concise business presentation.
-- `notebook_export.html` — browser-friendly rendering of the technical analysis.
-- `ecommerce_sessions.csv` — fully synthetic session-level sample with the same schema.
-- `generate_synthetic_data.py` — deterministic generator for the public sample.
+- `conversion_propensity_analysis.ipynb` - complete exploratory analysis, feature engineering, modelling and evaluation.
+- `presentation.html` - concise business presentation.
+- `notebook_export.html` - browser-friendly rendering of the technical analysis.
+- `ecommerce_sessions.csv` - fully synthetic session-level sample with the same schema.
+- `generate_synthetic_data.py` - deterministic generator for the public sample.
 
 ## Methods
 
