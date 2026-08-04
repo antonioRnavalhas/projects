@@ -1,11 +1,7 @@
 name: Deploy portfolio demos to GitHub Pages
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - "site/**"
-      - ".github/workflows/pages.yml"
+  # Manual-only by design: deployments require explicit authorization.
   workflow_dispatch:
 
 permissions:
