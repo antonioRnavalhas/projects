@@ -6,6 +6,12 @@ A focused FastAPI prototype for the Atelier Home AI shopping assistant portfolio
 
 The public version uses the fictional **Atelier Home** brand and a synthetic 12-product catalogue. It contains no retailer data, recruitment materials or production credentials.
 
+## Live demo
+
+Try the [client-only portfolio demo](https://antoniornavalhas.github.io/projects/ai-shopping-assistant/). It reproduces the main discovery and comparison flow entirely in the browser with the fictional catalogue, without an API key, backend, personal-data collection or live retailer data.
+
+The live page is intentionally a static demonstration for GitHub Pages. The FastAPI implementation, API contracts, server-side conversation memory and optional provider integration remain available in this repository and can be run locally as described below.
+
 ## What it demonstrates
 
 - Natural-language product discovery

@@ -1,0 +1,26 @@
+# Private configuration and credentials
+.env
+.env.*
+*.pem
+*.key
+
+# Database exports and raw source data
+*.dump
+*.sql.gz
+atpdb.sql
+data/*.csv
+!data/atp_matches_synthetic.csv
+mongoexport*/
+
+# Original coursework and media artefacts
+*.zip
+*.docx
+*.pptx
+*.pdf
+*.m4a
+
+# Local tooling
+.DS_Store
+Thumbs.db
+__pycache__/
+.pytest_cache/

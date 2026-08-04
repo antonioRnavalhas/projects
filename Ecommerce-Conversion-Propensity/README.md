@@ -2,6 +2,13 @@
 
 Portfolio case study for predicting purchase propensity during an active e-commerce session.
 
+## Live demo
+
+- [Business presentation](https://antoniornavalhas.github.io/projects/ecommerce-conversion/)
+- [Technical notebook](https://antoniornavalhas.github.io/projects/ecommerce-conversion/notebook.html)
+
+Both browser-ready pages are self-contained. The public dataset is fully synthetic and the pages do not collect personal data.
+
 ## Objective
 
 Rank sessions by their probability of conversion so that marketing and on-site interventions can focus on visitors with the strongest purchase intent.

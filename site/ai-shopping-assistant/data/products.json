@@ -1,0 +1,309 @@
+[
+  {
+    "id": "sofa-aurora",
+    "name": "Aurora 2-Seater Sofa",
+    "category": "sofa",
+    "price": 849,
+    "rating": 4.7,
+    "width_cm": 164,
+    "height_cm": 82,
+    "depth_cm": 91,
+    "colors": ["beige", "green"],
+    "material": {
+      "en": "Recycled polyester upholstery",
+      "fr": "Revêtement en polyester recyclé",
+      "pt": "Revestimento em poliéster reciclado"
+    },
+    "description": {
+      "en": "A compact, deep-seated sofa with removable cushion covers.",
+      "fr": "Un canapé compact et profond avec des housses de coussin amovibles.",
+      "pt": "Um sofá compacto e profundo, com capas de almofada removíveis."
+    },
+    "tags": ["compact", "small room", "comfortable", "removable covers"],
+    "sustainability": [
+      {
+        "label": {"en": "Recycled upholstery", "fr": "Revêtement recyclé", "pt": "Revestimento reciclado"},
+        "detail": {
+          "en": "The catalogue specifies upholstery made with 70% recycled polyester.",
+          "fr": "Le catalogue indique un revêtement composé de 70 % de polyester recyclé.",
+          "pt": "O catálogo indica um revestimento composto por 70% de poliéster reciclado."
+        }
+      }
+    ],
+    "image": "./assets/images/sofa-aurora.webp"
+  },
+  {
+    "id": "sofa-harbor",
+    "name": "Harbor 3-Seater Sofa",
+    "category": "sofa",
+    "price": 1299,
+    "rating": 4.8,
+    "width_cm": 210,
+    "height_cm": 84,
+    "depth_cm": 98,
+    "colors": ["green", "blue"],
+    "material": {"en": "Cotton velvet", "fr": "Velours de coton", "pt": "Veludo de algodão"},
+    "description": {
+      "en": "A generous statement sofa with soft cushions and a solid beech frame.",
+      "fr": "Un canapé généreux avec des coussins moelleux et une structure en hêtre massif.",
+      "pt": "Um sofá generoso com almofadas macias e estrutura em faia maciça."
+    },
+    "tags": ["large", "premium", "comfortable", "velvet"],
+    "sustainability": [],
+    "image": "./assets/images/sofa-harbor.webp"
+  },
+  {
+    "id": "sofa-mosaic",
+    "name": "Mosaic Modular Sofa",
+    "category": "sofa",
+    "price": 999,
+    "rating": 4.6,
+    "width_cm": 172,
+    "height_cm": 76,
+    "depth_cm": 94,
+    "colors": ["terracotta", "beige"],
+    "material": {"en": "Linen and cotton blend", "fr": "Mélange de lin et coton", "pt": "Mistura de linho e algodão"},
+    "description": {
+      "en": "A flexible two-module sofa with replaceable individual sections.",
+      "fr": "Un canapé flexible en deux modules dont les sections peuvent être remplacées.",
+      "pt": "Um sofá flexível de dois módulos, com secções substituíveis."
+    },
+    "tags": ["modular", "repairable", "small room", "linen"],
+    "sustainability": [
+      {
+        "label": {"en": "Replaceable modules", "fr": "Modules remplaçables", "pt": "Módulos substituíveis"},
+        "detail": {
+          "en": "Individual modules and covers are listed as separately replaceable.",
+          "fr": "Les modules individuels et les housses sont indiqués comme remplaçables séparément.",
+          "pt": "Os módulos individuais e as capas estão indicados como substituíveis em separado."
+        }
+      }
+    ],
+    "image": "./assets/images/sofa-mosaic.webp"
+  },
+  {
+    "id": "desk-nordic",
+    "name": "Nordic Oak Desk",
+    "category": "desk",
+    "price": 329,
+    "rating": 4.6,
+    "width_cm": 120,
+    "height_cm": 75,
+    "depth_cm": 58,
+    "colors": ["natural"],
+    "material": {"en": "FSC-certified oak veneer", "fr": "Placage chêne certifié FSC", "pt": "Folheado de carvalho certificado FSC"},
+    "description": {
+      "en": "A warm oak desk with two drawers and discreet cable management.",
+      "fr": "Un bureau chaleureux en chêne avec deux tiroirs et un passage de câbles discret.",
+      "pt": "Uma secretária em carvalho com duas gavetas e gestão discreta de cabos."
+    },
+    "tags": ["home office", "storage", "oak", "cable management"],
+    "sustainability": [
+      {
+        "label": {"en": "Certified wood", "fr": "Bois certifié", "pt": "Madeira certificada"},
+        "detail": {
+          "en": "The wood is listed as FSC certified, supporting responsible forest management.",
+          "fr": "Le bois est indiqué comme certifié FSC, en faveur d’une gestion responsable des forêts.",
+          "pt": "A madeira está indicada como certificada FSC, apoiando a gestão florestal responsável."
+        }
+      }
+    ],
+    "image": "./assets/images/desk-nordic.webp"
+  },
+  {
+    "id": "desk-forge",
+    "name": "Forge Metal Desk",
+    "category": "desk",
+    "price": 249,
+    "rating": 4.4,
+    "width_cm": 110,
+    "height_cm": 74,
+    "depth_cm": 55,
+    "colors": ["black"],
+    "material": {"en": "Powder-coated steel", "fr": "Acier thermolaqué", "pt": "Aço com revestimento em pó"},
+    "description": {
+      "en": "A slim industrial desk with a durable steel frame and raised shelf.",
+      "fr": "Un bureau industriel fin avec une structure en acier et une étagère surélevée.",
+      "pt": "Uma secretária industrial estreita, com estrutura em aço e prateleira elevada."
+    },
+    "tags": ["compact", "industrial", "home office", "budget"],
+    "sustainability": [],
+    "image": "./assets/images/desk-forge.webp"
+  },
+  {
+    "id": "table-extend",
+    "name": "Extend Oak Table",
+    "category": "table",
+    "price": 759,
+    "rating": 4.7,
+    "width_cm": 140,
+    "height_cm": 76,
+    "depth_cm": 90,
+    "colors": ["natural"],
+    "material": {"en": "FSC-certified solid oak", "fr": "Chêne massif certifié FSC", "pt": "Carvalho maciço certificado FSC"},
+    "description": {
+      "en": "A solid oak table that extends from four to six seats.",
+      "fr": "Une table en chêne massif extensible de quatre à six places.",
+      "pt": "Uma mesa em carvalho maciço extensível de quatro para seis lugares."
+    },
+    "tags": ["dining", "extendable", "family", "oak"],
+    "sustainability": [
+      {
+        "label": {"en": "Certified solid wood", "fr": "Bois massif certifié", "pt": "Madeira maciça certificada"},
+        "detail": {
+          "en": "The catalogue lists FSC-certified solid oak and water-based finish.",
+          "fr": "Le catalogue indique du chêne massif certifié FSC et une finition à base d’eau.",
+          "pt": "O catálogo indica carvalho maciço certificado FSC e acabamento à base de água."
+        }
+      }
+    ],
+    "image": "./assets/images/table-extend.webp"
+  },
+  {
+    "id": "table-orbit",
+    "name": "Orbit Round Table",
+    "category": "table",
+    "price": 499,
+    "rating": 4.5,
+    "width_cm": 110,
+    "height_cm": 75,
+    "depth_cm": 110,
+    "colors": ["black", "natural"],
+    "material": {"en": "Ash veneer and steel", "fr": "Placage frêne et acier", "pt": "Folheado de freixo e aço"},
+    "description": {
+      "en": "A compact round dining table for four with a sculptural central base.",
+      "fr": "Une table ronde compacte pour quatre personnes avec un pied central sculptural.",
+      "pt": "Uma mesa de jantar redonda e compacta para quatro pessoas, com base central escultural."
+    },
+    "tags": ["dining", "round", "compact", "four seats"],
+    "sustainability": [],
+    "image": "./assets/images/table-orbit.webp"
+  },
+  {
+    "id": "chair-cane",
+    "name": "Cane Dining Chair",
+    "category": "chair",
+    "price": 159,
+    "rating": 4.5,
+    "width_cm": 49,
+    "height_cm": 81,
+    "depth_cm": 54,
+    "colors": ["natural", "beige"],
+    "material": {"en": "FSC-certified oak and cane", "fr": "Chêne certifié FSC et cannage", "pt": "Carvalho certificado FSC e palhinha"},
+    "description": {
+      "en": "An airy dining chair combining a woven cane back with an oak frame.",
+      "fr": "Une chaise légère associant un dossier cannage à une structure en chêne.",
+      "pt": "Uma cadeira leve que combina encosto em palhinha com estrutura em carvalho."
+    },
+    "tags": ["dining", "cane", "natural", "lightweight"],
+    "sustainability": [
+      {
+        "label": {"en": "Certified frame", "fr": "Structure certifiée", "pt": "Estrutura certificada"},
+        "detail": {
+          "en": "The oak frame is listed as FSC certified.",
+          "fr": "La structure en chêne est indiquée comme certifiée FSC.",
+          "pt": "A estrutura em carvalho está indicada como certificada FSC."
+        }
+      }
+    ],
+    "image": "./assets/images/chair-cane.webp"
+  },
+  {
+    "id": "chair-terra",
+    "name": "Terra Lounge Chair",
+    "category": "chair",
+    "price": 389,
+    "rating": 4.8,
+    "width_cm": 72,
+    "height_cm": 74,
+    "depth_cm": 76,
+    "colors": ["terracotta", "green"],
+    "material": {"en": "Wool-blend upholstery", "fr": "Revêtement en mélange de laine", "pt": "Revestimento em mistura de lã"},
+    "description": {
+      "en": "A low lounge chair with a curved back and supportive seat.",
+      "fr": "Un fauteuil bas avec un dossier arrondi et une assise enveloppante.",
+      "pt": "Um cadeirão baixo com encosto curvo e assento envolvente."
+    },
+    "tags": ["lounge", "comfortable", "reading", "statement"],
+    "sustainability": [],
+    "image": "./assets/images/chair-terra.webp"
+  },
+  {
+    "id": "lamp-halo",
+    "name": "Halo Table Lamp",
+    "category": "lighting",
+    "price": 89,
+    "rating": 4.3,
+    "width_cm": 28,
+    "height_cm": 36,
+    "depth_cm": 28,
+    "colors": ["terracotta", "beige"],
+    "material": {"en": "Powder-coated metal", "fr": "Métal thermolaqué", "pt": "Metal com revestimento em pó"},
+    "description": {
+      "en": "A sculptural mushroom lamp that casts a soft, warm pool of light.",
+      "fr": "Une lampe champignon sculpturale qui diffuse une lumière douce et chaleureuse.",
+      "pt": "Um candeeiro escultural em forma de cogumelo que difunde uma luz suave e quente."
+    },
+    "tags": ["table lamp", "small", "warm light", "bedroom"],
+    "sustainability": [],
+    "image": "./assets/images/lamp-halo.webp"
+  },
+  {
+    "id": "lamp-lumen",
+    "name": "Lumen Pendant Light",
+    "category": "lighting",
+    "price": 139,
+    "rating": 4.6,
+    "width_cm": 40,
+    "height_cm": 32,
+    "depth_cm": 40,
+    "colors": ["natural"],
+    "material": {"en": "Handwoven rattan", "fr": "Rotin tressé à la main", "pt": "Rotim entrançado à mão"},
+    "description": {
+      "en": "A woven pendant that creates a warm pattern of light above a dining table.",
+      "fr": "Une suspension tressée qui crée un motif lumineux chaleureux au-dessus de la table.",
+      "pt": "Um candeeiro suspenso entrançado que cria um padrão de luz quente sobre a mesa."
+    },
+    "tags": ["pendant", "dining", "rattan", "handwoven"],
+    "sustainability": [
+      {
+        "label": {"en": "Renewable material", "fr": "Matériau renouvelable", "pt": "Material renovável"},
+        "detail": {
+          "en": "The shade is listed as handwoven from rapidly renewable rattan.",
+          "fr": "L’abat-jour est indiqué comme tressé à la main en rotin rapidement renouvelable.",
+          "pt": "O abajur está indicado como entrançado à mão em rotim rapidamente renovável."
+        }
+      }
+    ],
+    "image": "./assets/images/lamp-lumen.webp"
+  },
+  {
+    "id": "rug-weave",
+    "name": "Weave Wool Rug",
+    "category": "textile",
+    "price": 279,
+    "rating": 4.7,
+    "width_cm": 160,
+    "height_cm": 2,
+    "depth_cm": 230,
+    "colors": ["beige", "natural"],
+    "material": {"en": "Wool and recycled cotton", "fr": "Laine et coton recyclé", "pt": "Lã e algodão reciclado"},
+    "description": {
+      "en": "A softly textured rug with a neutral geometric pattern.",
+      "fr": "Un tapis à la texture douce avec un motif géométrique neutre.",
+      "pt": "Um tapete de textura suave com padrão geométrico neutro."
+    },
+    "tags": ["rug", "living room", "soft", "neutral", "geometric"],
+    "sustainability": [
+      {
+        "label": {"en": "Recycled cotton content", "fr": "Contenu en coton recyclé", "pt": "Conteúdo de algodão reciclado"},
+        "detail": {
+          "en": "The backing is listed as containing 60% recycled cotton.",
+          "fr": "Le revers est indiqué comme contenant 60 % de coton recyclé.",
+          "pt": "O verso está indicado como contendo 60% de algodão reciclado."
+        }
+      }
+    ],
+    "image": "./assets/images/rug-weave.webp"
+  }
+]
