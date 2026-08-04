@@ -1,0 +1,31 @@
+record_id,player_name,birth_location,height_cm,hand,tournament,tournament_category,event_location,date_range,surface,prize_usd,round_name,ranking,opponent_name,result
+S001,Player Alpha,"Prototype City, Portugal",188,"Right-Handed, Two-Handed Backhand",Major Delta,Grand Slam,"Model City, Spain",2025.01.10 - 2025.01.24,Hard,2500000,Round of 128,12,Player Beta,W
+S002,Player Alpha,"Prototype City, Portugal",188,"Right-Handed, Two-Handed Backhand",Major Delta,Grand Slam,"Model City, Spain",2025.01.10 - 2025.01.24,Hard,2500000,Round of 64,12,Player Gamma,W
+S003,Player Alpha,"Prototype City, Portugal",188,"Right-Handed, Two-Handed Backhand",Major Delta,Grand Slam,"Model City, Spain",2025.01.10 - 2025.01.24,Hard,2500000,Round of 32,12,Player Delta,L
+S004,Player Alpha,"Prototype City, Portugal",188,"Right-Handed, Two-Handed Backhand",Open Alpha,ATP 500,"Demo City, Portugal",2025.03.03 - 2025.03.09,Clay,500000,Quarterfinal,12,Player Epsilon,W
+S005,Player Alpha,"Prototype City, Portugal",188,"Right-Handed, Two-Handed Backhand",Masters Gamma,Masters 1000,"Prototype City, France",2025.05.05 - 2025.05.12,Hard,1000000,Semifinal,12,Player Zeta,W
+S006,Player Beta,"Mock City, Spain",181,"Left-Handed, Two-Handed Backhand",Major Delta,Grand Slam,"Model City, Spain",2025.01.10 - 2025.01.24,Hard,2500000,Round of 128,24,Player Alpha,L
+S007,Player Beta,"Mock City, Spain",181,"Left-Handed, Two-Handed Backhand",Major Delta,Grand Slam,"Model City, Spain",2025.01.10 - 2025.01.24,Hard,2500000,Round of 64,24,Player Delta,W
+S008,Player Beta,"Mock City, Spain",181,"Left-Handed, Two-Handed Backhand",Major Delta,Grand Slam,"Model City, Spain",2025.01.10 - 2025.01.24,Hard,2500000,Round of 32,24,Player Epsilon,W
+S009,Player Beta,"Mock City, Spain",181,"Left-Handed, Two-Handed Backhand",Open Alpha,ATP 500,"Demo City, Portugal",2025.03.03 - 2025.03.09,Clay,500000,Semifinal,24,Player Gamma,L
+S010,Player Beta,"Mock City, Spain",181,"Left-Handed, Two-Handed Backhand",Championship Beta,ATP 250,"Sample City, United Kingdom",2025.07.01 - 2025.07.07,Grass,250000,Final,24,Player Zeta,W
+S011,Player Gamma,"Illustration City, France",185,"Left-Handed, One-Handed Backhand",Major Delta,Grand Slam,"Model City, Spain",2025.01.10 - 2025.01.24,Hard,2500000,Round of 128,31,Player Zeta,W
+S012,Player Gamma,"Illustration City, France",185,"Left-Handed, One-Handed Backhand",Major Delta,Grand Slam,"Model City, Spain",2025.01.10 - 2025.01.24,Hard,2500000,Round of 64,31,Player Alpha,L
+S013,Player Gamma,"Illustration City, France",185,"Left-Handed, One-Handed Backhand",Major Delta,Grand Slam,"Model City, Spain",2025.01.10 - 2025.01.24,Hard,2500000,Round of 32,31,Player Beta,W
+S014,Player Gamma,"Illustration City, France",185,"Left-Handed, One-Handed Backhand",Major Delta,Grand Slam,"Model City, Spain",2025.01.10 - 2025.01.24,Hard,2500000,Quarterfinal,31,Player Delta,W
+S015,Player Gamma,"Illustration City, France",185,"Left-Handed, One-Handed Backhand",Masters Gamma,Masters 1000,"Prototype City, France",2025.05.05 - 2025.05.12,Hard,1000000,Final,31,Player Epsilon,W
+S016,Player Delta,"Example City, Germany",193,"Right-Handed, One-Handed Backhand",Major Delta,Grand Slam,"Model City, Spain",2025.01.10 - 2025.01.24,Hard,2500000,Round of 128,44,Player Epsilon,W
+S017,Player Delta,"Example City, Germany",193,"Right-Handed, One-Handed Backhand",Major Delta,Grand Slam,"Model City, Spain",2025.01.10 - 2025.01.24,Hard,2500000,Round of 64,44,Player Beta,L
+S018,Player Delta,"Example City, Germany",193,"Right-Handed, One-Handed Backhand",Major Delta,Grand Slam,"Model City, Spain",2025.01.10 - 2025.01.24,Hard,2500000,Round of 32,44,Player Alpha,W
+S019,Player Delta,"Example City, Germany",193,"Right-Handed, One-Handed Backhand",Open Alpha,ATP 500,"Demo City, Portugal",2025.03.03 - 2025.03.09,Clay,500000,Final,44,Player Zeta,W
+S020,Player Delta,"Example City, Germany",193,"Right-Handed, One-Handed Backhand",Championship Beta,ATP 250,"Sample City, United Kingdom",2025.07.01 - 2025.07.07,Grass,250000,Semifinal,44,Player Gamma,W
+S021,Player Epsilon,"Demo City, Italy",176,"Left-Handed, Two-Handed Backhand",Major Delta,Grand Slam,"Model City, Spain",2025.01.10 - 2025.01.24,Hard,2500000,Round of 128,58,Player Delta,L
+S022,Player Epsilon,"Demo City, Italy",176,"Left-Handed, Two-Handed Backhand",Major Delta,Grand Slam,"Model City, Spain",2025.01.10 - 2025.01.24,Hard,2500000,Round of 64,58,Player Zeta,W
+S023,Player Epsilon,"Demo City, Italy",176,"Left-Handed, Two-Handed Backhand",Open Alpha,ATP 500,"Demo City, Portugal",2025.03.03 - 2025.03.09,Clay,500000,Quarterfinal,58,Player Alpha,L
+S024,Player Epsilon,"Demo City, Italy",176,"Left-Handed, Two-Handed Backhand",Masters Gamma,Masters 1000,"Prototype City, France",2025.05.05 - 2025.05.12,Hard,1000000,Semifinal,58,Player Gamma,L
+S025,Player Epsilon,"Demo City, Italy",176,"Left-Handed, Two-Handed Backhand",Championship Beta,ATP 250,"Sample City, United Kingdom",2025.07.01 - 2025.07.07,Grass,250000,Quarterfinal,58,Player Beta,W
+S026,Player Zeta,"Sample City, Netherlands",179,"Right-Handed, Two-Handed Backhand",Major Delta,Grand Slam,"Model City, Spain",2025.01.10 - 2025.01.24,Hard,2500000,Round of 128,76,Player Gamma,L
+S027,Player Zeta,"Sample City, Netherlands",179,"Right-Handed, Two-Handed Backhand",Major Delta,Grand Slam,"Model City, Spain",2025.01.10 - 2025.01.24,Hard,2500000,Round of 64,76,Player Epsilon,L
+S028,Player Zeta,"Sample City, Netherlands",179,"Right-Handed, Two-Handed Backhand",Open Alpha,ATP 500,"Demo City, Portugal",2025.03.03 - 2025.03.09,Clay,500000,Semifinal,76,Player Delta,L
+S029,Player Zeta,"Sample City, Netherlands",179,"Right-Handed, Two-Handed Backhand",Masters Gamma,Masters 1000,"Prototype City, France",2025.05.05 - 2025.05.12,Hard,1000000,Quarterfinal,76,Player Alpha,L
+S030,Player Zeta,"Sample City, Netherlands",179,"Right-Handed, Two-Handed Backhand",Championship Beta,ATP 250,"Sample City, United Kingdom",2025.07.01 - 2025.07.07,Grass,250000,Final,76,Player Beta,L

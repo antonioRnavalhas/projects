@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio presentation for an e-commerce conversion propensity modelling case study using synthetic public data.">
+  <title>E-commerce Conversion Propensity — Portfolio Presentation</title>
+  <style>
+    :root {
+      --ink: #17212f;
+      --muted: #627083;
+      --blue: #1a73e8;
+      --green: #0f9d58;
+      --amber: #f9ab00;
+      --red: #d93025;
+      --line: #d7dde7;
+      --panel: #f6f8fb;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #e9edf4;
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .slide {
+      width: 1280px;
+      height: 720px;
+      margin: 0 auto 28px;
+      padding: 56px 68px;
+      background: var(--white);
+      position: relative;
+      overflow: hidden;
+      page-break-after: always;
+    }
+
+    .slide::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 10px;
+      background: linear-gradient(90deg, var(--blue), var(--green), var(--amber), var(--red));
+    }
+
+    .kicker {
+      font-size: 17px;
+      color: var(--blue);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: 58px;
+      line-height: 1.04;
+      margin: 0 0 28px;
+      max-width: 980px;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      font-size: 42px;
+      line-height: 1.08;
+      margin: 0 0 28px;
+      max-width: 920px;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      font-size: 24px;
+      margin: 0 0 12px;
+    }
+
+    p {
+      font-size: 24px;
+      line-height: 1.36;
+      margin: 0 0 14px;
+      max-width: 980px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 26px;
+    }
+
+    li {
+      font-size: 24px;
+      line-height: 1.36;
+      margin: 0 0 13px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 28px;
+      max-width: 900px;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 30px;
+      left: 68px;
+      right: 68px;
+      display: flex;
+      justify-content: space-between;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      margin-top: 22px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 26px;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 24px;
+    }
+
+    .metric {
+      font-size: 52px;
+      line-height: 1;
+      font-weight: 800;
+      color: var(--blue);
+      margin-bottom: 10px;
+    }
+
+    .metric.green {
+      color: var(--green);
+    }
+
+    .metric.amber {
+      color: var(--amber);
+    }
+
+    .label {
+      color: var(--muted);
+      font-size: 19px;
+      line-height: 1.3;
+    }
+
+    .small {
+      font-size: 19px;
+      line-height: 1.34;
+      color: var(--muted);
+    }
+
+    .flow {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-top: 34px;
+      align-items: stretch;
+    }
+
+    .step {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px;
+      background: #fff;
+    }
+
+    .step-number {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: var(--blue);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .bar-chart {
+      margin-top: 16px;
+      display: grid;
+      grid-template-columns: 160px 1fr 90px;
+      gap: 12px;
+      align-items: center;
+      font-size: 20px;
+    }
+
+    .bar-bg {
+      height: 28px;
+      background: #e6ebf2;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .bar {
+      height: 100%;
+      background: var(--blue);
+      border-radius: 4px;
+    }
+
+    .bar.green {
+      background: var(--green);
+    }
+
+    .bar.amber {
+      background: var(--amber);
+    }
+
+    .quote {
+      margin-top: 34px;
+      padding: 26px 30px;
+      border-left: 8px solid var(--blue);
+      background: var(--panel);
+      font-size: 30px;
+      line-height: 1.28;
+      max-width: 980px;
+    }
+
+    .pill-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 22px;
+    }
+
+    .pill {
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: 999px;
+      padding: 10px 16px;
+      font-size: 19px;
+      color: var(--ink);
+    }
+
+    .wide {
+      max-width: 1100px;
+    }
+
+    .demo-nav {
+      position: sticky;
+      z-index: 10;
+      top: 0;
+      min-width: 1280px;
+      padding: 12px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      border-bottom: 1px solid #c8ced8;
+      background: rgba(246, 248, 251, .96);
+      color: var(--muted);
+      font-size: 14px;
+      backdrop-filter: blur(10px);
+    }
+
+    .demo-nav strong { color: var(--ink); }
+    .demo-nav div { display: flex; gap: 18px; }
+    .demo-nav a { color: var(--blue); font-weight: 700; text-decoration: none; }
+    .demo-nav a:hover { text-decoration: underline; }
+
+    @media print {
+      .demo-nav { display: none; }
+      body { background: #fff; }
+      .slide { margin-bottom: 0; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="demo-nav" aria-label="Demo navigation">
+    <span><strong>Portfolio demo</strong> · Synthetic public data; no personal data is collected.</span>
+    <div>
+      <a href="../">Portfolio</a>
+      <a href="./notebook.html">Technical notebook</a>
+      <a href="https://github.com/antonioRnavalhas/projects/tree/main/Ecommerce-Conversion-Propensity">Source</a>
+    </div>
+  </nav>
+  <section class="slide">
+    <div class="kicker">Portfolio case study</div>
+    <h1>Intra-session purchase propensity model</h1>
+    <p class="subtitle">A prototype to rank website sessions by likelihood to purchase and activate high-intent audiences in marketing and personalization workflows.</p>
+    <div class="quote">The model is valuable if it concentrates buyers in the top-scored sessions, not if it maximizes plain accuracy.</div>
+    <div class="footer">
+      <span>Antonio Navalhas</span>
+      <span>Data Scientist case presentation</span>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">Business problem</div>
+    <h2>Purchases are rare, so accuracy is the wrong headline</h2>
+    <div class="grid-3">
+      <div class="panel">
+        <div class="metric">1.68%</div>
+        <div class="label">test conversion rate</div>
+      </div>
+      <div class="panel">
+        <div class="metric amber">241</div>
+        <div class="label">transactions in 14,339 test sessions</div>
+      </div>
+      <div class="panel">
+        <div class="metric green">98%+</div>
+        <div class="label">accuracy from a useless "no purchase" model</div>
+      </div>
+    </div>
+    <div class="quote">The practical question is: can we identify a small segment where purchase intent is much higher than average?</div>
+    <div class="footer">
+      <span>Why ranking matters</span>
+      <span>02</span>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">Data and assumptions</div>
+    <h2>Session-level anonymized e-commerce session data</h2>
+    <div class="grid-2">
+      <div class="panel">
+        <h3>Dataset</h3>
+        <ul>
+          <li>Anonymized e-commerce session data</li>
+          <li>Period: July to August 2017</li>
+          <li>Target: transaction within the session</li>
+          <li>Features: traffic source, device, geo, page path and timing</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>Cleaning rule</h3>
+        <ul>
+          <li>Modelling unit: one row per session</li>
+          <li>Duplicated sessId values were deduplicated</li>
+          <li>First observed row kept for features</li>
+          <li>Session target set to max(transaction)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer">
+      <span>Data foundation</span>
+      <span>03</span>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">Modelling approach</div>
+    <h2>Two scoring moments, two use cases</h2>
+    <div class="grid-2">
+      <div class="panel">
+        <h3>Entry model</h3>
+        <p class="small">Can be scored near the beginning of the session.</p>
+        <ul>
+          <li>Traffic medium and source</li>
+          <li>Device, browser and geography</li>
+          <li>Landing page, time and visitor history</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>Intra-session model</h3>
+        <p class="small">Can be scored after further behavior is observed.</p>
+        <ul>
+          <li>Second and third page visited</li>
+          <li>Page timing signals</li>
+          <li>More accurate, but later intervention point</li>
+        </ul>
+      </div>
+    </div>
+    <div class="flow">
+      <div class="step"><div class="step-number">1</div><h3>Encode</h3><p class="small">One-hot categorical features</p></div>
+      <div class="step"><div class="step-number">2</div><h3>Balance</h3><p class="small">Higher weight for rare conversions</p></div>
+      <div class="step"><div class="step-number">3</div><h3>Train</h3><p class="small">Logistic regression pipeline</p></div>
+      <div class="step"><div class="step-number">4</div><h3>Rank</h3><p class="small">Sort sessions by propensity score</p></div>
+    </div>
+    <div class="footer">
+      <span>Prototype design</span>
+      <span>04</span>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">Results</div>
+    <h2>The intra-session model concentrates conversions in the top scores</h2>
+    <div class="grid-3">
+      <div class="panel">
+        <div class="metric">18.85%</div>
+        <div class="label">conversion rate in top 5% intra-session scores</div>
+      </div>
+      <div class="panel">
+        <div class="metric green">11.2x</div>
+        <div class="label">lift versus average test conversion rate</div>
+      </div>
+      <div class="panel">
+        <div class="metric amber">56%</div>
+        <div class="label">of test transactions captured in top 5%</div>
+      </div>
+    </div>
+    <div class="bar-chart">
+      <div>Average</div>
+      <div class="bar-bg"><div class="bar" style="width: 9%;"></div></div>
+      <div>1.68%</div>
+      <div>Entry top 5%</div>
+      <div class="bar-bg"><div class="bar amber" style="width: 57%;"></div></div>
+      <div>10.75%</div>
+      <div>Intra top 5%</div>
+      <div class="bar-bg"><div class="bar green" style="width: 100%;"></div></div>
+      <div>18.85%</div>
+    </div>
+    <div class="footer">
+      <span>Lift is the business metric</span>
+      <span>05</span>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">Activation</div>
+    <h2>Turn propensity scores into marketing and onsite actions</h2>
+    <div class="grid-2">
+      <div class="panel">
+        <h3>High propensity audience</h3>
+        <ul>
+          <li>Remarketing for high-intent non-buyers</li>
+          <li>More aggressive bids in Google Ads or DV360</li>
+          <li>Checkout, delivery or support nudges onsite</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>Media efficiency</h3>
+        <ul>
+          <li>Reduce spend on low-propensity sessions</li>
+          <li>Prioritize budget where expected value is higher</li>
+          <li>Validate through holdout testing and incrementality</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pill-row">
+      <div class="pill">CPA</div>
+      <div class="pill">ROAS</div>
+      <div class="pill">Conversion rate</div>
+      <div class="pill">Incremental revenue</div>
+      <div class="pill">Audience quality</div>
+    </div>
+    <div class="footer">
+      <span>From model to action</span>
+      <span>06</span>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">Limitations and roadmap</div>
+    <h2>Prototype first, production with validation</h2>
+    <div class="grid-2">
+      <div class="panel">
+        <h3>Limitations</h3>
+        <ul>
+          <li>One month of public demo data</li>
+          <li>Scores optimized for ranking, not exact probability calibration</li>
+          <li>Intra-session signals are only available after browsing behavior occurs</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>Next steps</h3>
+        <ul>
+          <li>Add richer customer, product, margin and media cost data</li>
+          <li>Calibrate scores on a validation period</li>
+          <li>Run controlled experiments and monitor drift</li>
+          <li>Consider uplift modelling for intervention decisions</li>
+        </ul>
+      </div>
+    </div>
+    <div class="quote">Recommended path: use the model to create testable high-propensity audiences, then prove incremental business impact before scaling.</div>
+    <div class="footer">
+      <span>Roadmap</span>
+      <span>07</span>
+    </div>
+  </section>
+</body>
+</html>
