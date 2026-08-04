@@ -62,7 +62,6 @@ const state = {
 };
 
 const messages = document.querySelector("#messages");
-const form = document.querySelector("#chat-form");
 const input = document.querySelector("#chat-input");
 const sendButton = document.querySelector("#send-button");
 const languageSelect = document.querySelector("#language-select");
@@ -470,15 +469,12 @@ function resizeInput() {
   input.style.height = `${Math.min(input.scrollHeight, 120)}px`;
 }
 
-form.addEventListener("submit", event => {
-  event.preventDefault();
-  sendMessage(input.value);
-});
+sendButton.addEventListener("click", () => sendMessage(input.value));
 input.addEventListener("input", resizeInput);
 input.addEventListener("keydown", event => {
   if (event.key === "Enter" && !event.shiftKey) {
     event.preventDefault();
-    form.requestSubmit();
+    sendMessage(input.value);
   }
 });
 languageSelect.addEventListener("change", event => {

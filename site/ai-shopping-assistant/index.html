@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Static portfolio demo of Léo, an AI shopping assistant prototype for fictional home and furniture products.">
+  <meta name="description" content="Static project demo of Léo, an AI shopping assistant prototype for fictional home and furniture products.">
   <title>Léo — Static Shopping Assistant Demo</title>
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./assets/css/styles.css">
@@ -26,9 +26,9 @@
   </header>
 
   <aside class="portfolio-notice" role="note">
-    <p><strong>Static portfolio demo.</strong> It runs entirely in your browser with 12 fictional products. No purchases, personal data, live retailer information, external AI service or server-side memory are used.</p>
+    <p><strong>Static project demo.</strong> It runs entirely in your browser with 12 fictional products. No purchases, personal data, live retailer information, external AI service or server-side memory are used.</p>
     <div>
-      <a href="../">Portfolio</a>
+      <a href="../">Repository</a>
       <a href="https://github.com/antonioRnavalhas/projects/tree/main/AI-Shopping-Assistant">Full FastAPI implementation</a>
     </div>
   </aside>
@@ -89,11 +89,11 @@
           <button id="compare-selected" type="button" data-i18n="compare">Compare</button>
         </div>
 
-        <form id="chat-form" class="composer">
+        <div id="chat-controls" class="composer" role="group" aria-label="Local demo controls">
           <label class="visually-hidden" for="chat-input">Message Léo</label>
           <textarea id="chat-input" rows="1" maxlength="1000" data-i18n-placeholder="placeholder" placeholder="What are you looking for?"></textarea>
-          <button id="send-button" type="submit" aria-label="Send message">↑</button>
-        </form>
+          <button id="send-button" type="button" aria-label="Send message">↑</button>
+        </div>
         <p class="prototype-note" data-i18n="prototypeNote">Static browser demo using fictional products and illustrative images. Availability is not live.</p>
       </section>
     </section>
